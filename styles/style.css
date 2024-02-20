@@ -1,1 +1,120 @@
 /* место для вашего кода */
+.content-section {
+  box-sizing: border-box;
+  width: 1100px;
+  min-height: 100px;
+  margin: auto;
+  background: rgb(255, 255, 255);
+}/*делаю для всей страницы параметры*/
+
+.header {
+position: absolute;
+width: 1052px;
+height: 105px;
+left: 24px;
+right: 24px;
+top: 92px;
+bottom: 2831px;
+}
+
+.header__logo {
+  display: flex;
+	justify-content: space-between;
+	align-items: center;
+  width: 129px;
+}
+.header__logo-image {
+  width: 100%;
+}
+.header__menu {
+
+}
+.header__menu-list {
+}
+.header__links-list-item {
+}
+.header__menu-link .header__menu-item_active{
+  text-decoration: none;
+}
+
+.header__address {
+display: flex;
+	flex-direction: column;
+	list-style: none;
+  font-size: 18px;
+font-weight: 400;
+line-height: 24.3px;
+letter-spacing: 0%;
+text-align: left;
+}
+
+.content {
+}
+.cover {
+}
+.content-section_theme_dark {
+}
+.cover__title {
+}
+.aligned-text {
+}
+.aligned-text_center {
+}
+.aligned-text_right {
+}
+.intro__heading {
+}
+.intro__title {
+}
+.lots {
+}
+.lots__heading {
+}
+.content-section__list {
+}
+.content-section__list-item {
+}
+.card_type_film {
+}
+.card__title {
+}
+.card_type_book {
+}
+.overlay {
+}
+.card_type_picture {
+}
+.lots__look-more-link {
+}
+.about {
+}
+.content-section__subtitle {
+}
+.accent-span {
+}
+.text-right {
+}
+.content-section__introduction {
+}
+.card-list {
+}
+.card {
+}
+.card_theme_dark {
+}
+.card__autor-photo {
+}
+.card__autor-name {
+}
+.card__content {
+}
+.card__text {
+}
+.card_theme_bright {
+}
+.footer {
+}
+.footer__copy {
+}
+.footer__links {
+}
