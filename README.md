@@ -1,3 +1,5 @@
+https://github.com/lev1996frontend/ono-tebe-nado
+
 # Яндекс Практикум, проект "Оно тебе надо"
 
 ## Оглавление
@@ -17,7 +19,7 @@
 
 ### Ссылки
 
-- Репозиторий на github: [Github](https://github.com/lev1996frontend/ono-tebe-nado)
+- URL решения: [Github](https://github.com/lev1996frontend/ono-tebe-nado)
 - URL лайв сервера: [Github](https://lev1996frontend.github.io/ono-tebe-nado/)
 
 ## Автор
