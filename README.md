@@ -17,7 +17,7 @@
 
 ### Ссылки
 
-- URL решения: [Github](https://github.com/lev1996frontend/ono-tebe-nado)
+- Репозиторий на github: [Github](https://github.com/lev1996frontend/ono-tebe-nado)
 - URL лайв сервера: [Github](https://lev1996frontend.github.io/ono-tebe-nado/)
 
 ## Автор
