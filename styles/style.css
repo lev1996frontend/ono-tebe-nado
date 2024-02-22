@@ -1,57 +1,59 @@
-main {
+.main__container {
   display: flex; /*задает блочный элемент как контейнер flexbox */
   flex-direction: column;/*задает направление элементов flexbox по вертикали. */
   gap: 183px;/*адает пространство между элементами flexbox. */
 }
 
 .content-section {
-  width: 100%;/* задает ширину элемента на 100%. */
-  margin: 0 auto;/*центрирует элемент по горизонтали. */
+  width: 100%;
+  margin: 0 auto;
 }
 
 .header {
-  display: grid;/*задает блочный элемент как контейнер grid. */
-  grid-template-columns: 1.51fr 2fr 1.5fr;/*задает три колонки в сетке с относительной шириной 1,51, 2 и 1,51. */
-  align-items: center;/*выравнивает элементы по вертикали по центру. */
-  padding: 92px 51px 89px;/* задает внутренние отступы. */
+  display: grid;
+  grid-template-columns: 1.51fr 2fr 1.5fr;
+  align-items: center;
+  padding: 92px 51px 89px;
 }
 
 .header__links-list {
-  display: flex;/*задает блочный элемент как контейнер flexbox. */
-  gap: 32px;/*задает пространство между элементами flexbox. */
+  display: flex;
+  gap: 32px;
 }
 
 .header__links-list-item {
-  list-style: circle;/*задает маркер списка в виде круга. */
+  list-style: circle;
 }
 
 .header__links-list-item_no-bullit {
-  list-style: none;/*- убирает маркеры списка. */
+  list-style: none;
 }
 
 .header__link {
-  font-size: 18px;/*задает размер шрифта. */
+  font-size: 18px;
   white-space: nowrap;/* запрещает перенос строки. */
 }
 
 .text-link:hover {
-  background-color: #000000;/*задает цвет фона при наведении */
-  color: #FFF;/*задает цвет текста при наведении. */
+  background-color: #000000;
+  color: #FFF;
 }
 
 .header__link_active {
-  text-decoration: none;/* убирает подчеркивание при активном состоянии*/
+  text-decoration: none;
 }
 
 .header__logo {
-  display: block;/*задает блочный элемент. */
-  justify-self: center;/*выравнивает элемент по горизонтали по центру. */
-  align-self: center;/*выравнивает элемент по вертикали по центру.*/
-  width: 140px;/*задает ширину элемента. */
+  left: -61px;
+    display: block;
+    justify-self: center;
+    align-self: center;
+    width: 140px;
+    position: relative;
 }
 
 .header__logo-image {
-  width: 100%;/*задает ширину изображения на 100%. */
+  width: 100%;
 }
 
 .address {
@@ -59,146 +61,144 @@ main {
 }
 
 .header__address {
-  justify-self: end;/*задает блочный элемент. */
-  font-style: inherit;/*наследует стиль шрифта родительского элемента */
+  justify-self: end;
+  font-style: inherit;
+  position: relative;
+  left: -33px;
 }
 
 .address__item {
-  display: block;/*задает блочный элемент. */
-  font-size: 18px;/*задает размер шрифта */
-  line-height: 1.35;/* задает высоту строки. */
-  text-underline-position: under;/*задает подчеркивание под текстом. */
+  display: block;
+  font-size: 18px;
+  line-height: 1.35;
+  text-underline-position: under;
 }
 
 .address__address-text {
-  font-size: 18px;/*задает размер шрифта. */
-  line-height: 1.35;/*задает высоту строки*/
+  font-size: 18px;
+  line-height: 1.35;
 }
 
 .cover {
   position: relative;/* задает позиционирование относительно родительского элемента. */
-  padding: 165px 50px 50px 50px;/*задает внутренние отступы. */
-  background-image: url(../images/cover.jpg);/*задает фоновое изображение. */
-  background-repeat: no-repeat;/*запрещает повторять фоновое изображение.
-  */
-  background-size: cover;/*масштабирует фоновое изображение до размера элемента. */
+  padding: 165px 50px 50px 50px;
+  background-image: url(../images/cover.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .overlay {
-  position: absolute;/*задает абсолютное позиционирование.*/
-  top: 0;/* задает верхний отступ от родительского элемента.*/
-  left: 0;/*задает левый отступ от родительского элемента*/
-  z-index: 0;/* задает порядок отображения элемента относительно других элементов*/
-  width: 100%;/*задает ширину элемента на 100%.*/
-  height: 100%;/*задает высоту элемента на 100%.*/
-  opacity: 0.6000000238418579;/*задает прозрачность элемента*/
-  background-color: #000000;/*задает цвет фона*/
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.6000000238418579;
+  background-color: #000000;
 }
 
 .cover__title {
-  position: relative;/*задает позиционирование относительно родительского элемента*/
-  z-index: 1;/*задает порядок отображения элемента относительно других элементов*/
-  display: flex;/*задает блочный элемент как контейнер flexbox*/
-  flex-direction: column;/* задает направление элементов flexbox по вертикали.*/
-  gap: 20px;/*задает пространство между элементами flexbox*/
-  color: #FFF;/*задает цвет текста.*/
-  font-weight: bold;/*задает жирный шрифт*/
-  font-size: 100px;/*задает размер шрифта*/
-  line-height: 1.15;/* задает высоту строки*/
-  letter-spacing: 30px;/*задает межбуквенный интервал*/
-  text-transform: uppercase;/*преобразует текст в верхний регистр.*/
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: #FFF;
+  font-weight: bold;
+  font-size: 100px;
+  line-height: 1.15;
+  letter-spacing: 30px;
+  text-transform: uppercase;
 }
 
 .aligned-text {
-  display: block;/*задает блочный элемент всем элементам*/
+  display: block;
 }
 
 .aligned-text_center {
-  line-height: 1;/*задает высоту строки*/
-  text-align: center;/*выравнивает текст по центру.*/
+  line-height: 1;
+  text-align: center;
 }
 
 .aligned-text_right {
-  line-height: 1;/*задает высоту строки*/
-  text-align: right;/* выравнивает текст по правому краю.*/
+  line-height: 1;
+  text-align: right;
 }
 
 .letter-spacing-extended {
-  letter-spacing: 60px;/*задает межбуквенный интервал.*/
-}
-
-/* Убирает бесполезный отступ в конце слова, создаваемый свойством letter-spacing всего элемента */
+  letter-spacing: 60px;
+}/* Убирает бесполезный отступ в конце слова, создаваемый свойством letter-spacing всего элемента */
 
 .remove-spacing {
   letter-spacing: normal;/*сбрасывает межбуквенный интервал до значения по умолчанию.*/
 }
 
 .cover__description {
-  position: relative;/* задает позиционирование относительно родительского элемент*/
-  z-index: 1;/*задает порядок отображения элемента относительно других элементов*/
-  display: flex;/* задает блочный элемент как контейнер flexbox*/
-  justify-content: flex-end;/*выравнивает элементы flexbox по правому краю*/
-  align-items: center;/*выравнивает элементы flexbox по вертикали по центру*/
-  gap: 78px;/*задает пространство между элементами flexbox*/
-  padding: 136px 0 0;/*задает внутренние отступы.*/
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 78px;
+  padding: 136px 0 0;
 }
 
 .cover__description-text {
-  color: #FFF;/*задает цвет текста*/
-  font-size: 22px;/*задает размер шрифта*/
-  line-height: 1.27;/* задает высоту строки*/
-  text-transform: uppercase;/*преобразует текст в верхний регистр.*/
-  word-spacing: 18px;/*задает межсловный интервал.*/
+  color: #FFF;
+  font-size: 22px;
+  line-height: 1.27;
+  text-transform: uppercase;
+  word-spacing: 18px;
 }
 
 .button {
-  border: 1px #FFF solid;/*задает границу элемента.*/
-  padding: 14px 32px;/*задает внутренние отступы.*/
-  color: #FFF;/* задает цвет текста*/
-  font-family: 'Raleway', sans-serif;/*задает семейство шрифтов.*/
-  font-weight: normal;/*задает обычный вес шрифта.*/
-  font-size: 22px;/*задает размер шрифта.*/
-  line-height: 1;/*задает высоту строки.*/
-  text-transform: uppercase;/*преобразует текст в верхний регистр.*/
+  border: 1px #FFF solid;
+  padding: 14px 32px;
+  color: #FFF;
+  font-family: 'Raleway', sans-serif;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 1;
+  text-transform: uppercase;
   background-color: transparent;/*задает прозрачный фон.*/
-  cursor: none;/*запрещает отображение курсора при наведении.*/
+  cursor: none;
 }
 
 .button:hover {
-  color: #000000;/*задает цвет текста при наведении.*/
-  background-color: #FFF;/*задает цвет фона при наведении.*/
+  color: #000000;
+  background-color: #FFF;
 }
 
 .lots {
-  padding: 0 50px;/*отступы сверху и снизу в 0, а слева и справа по 50px.*/
-} /*В классе .lots__heading задаются отступы сверху, справа, снизу и слева для элемента, а также стили текста (жирный шрифт, размер, высота строки, преобразование текста в верхний регистр). Эти стили могут использоваться для оформления заголовка или шапки блока.*/
+  padding: 0px 24px;
+}
 
 .lots__heading {
-  padding: 0 0 30px 40px;/*устанавливает отступы сверху, справа, снизу и слева для элемента.*/
+  padding: 0 0 30px 40px;
   font-weight: bold;
   font-size: 40px;
   line-height: 1;
   text-transform: uppercase;
-} /*В классе .lots__card-list используется сетка grid, описывается шаблон колонок и размещение элементов в них, указывается промежуток между колонками, а также отключается маркированный список. Это может помочь в создании сетки карточек товаров или элементов.*/
+}
 
 .lots__card-list {
-  display: grid;/*задает элементам сетку для расположения в виде таблицы.*/
+  display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 25px; /*устанавливает высоту элемента в 100%.*/
+  column-gap: 25px;
   list-style: none;
-}/*В классе .lots__card-list используется сетка grid, описывается шаблон колонок и размещение элементов в них, указывается промежуток между колонками, а также отключается маркированный список. Это помогает в создании сетки карточек товаров или элементов.*/
+}
 
 .lost__card-list-item {
   height: 100%;
-}/*Класс .lost__card-list-item задает элементам высоту 100%. Это может быть полезно для установки равной высоты элементов внутри определенного контейнера.*/
+}
 
 .card-link {
   display: block;
   height: 100%;
-} /*В классе .card определяются различные стили для карточки товара, включая позиционирование, использование flexbox, выравнивание содержимого, промежутки между элементами, размеры, отступы и т.д. Эти стили могут помочь создать структуру и оформление карточки товара.*/
-
+}
 .card {
-  position: relative;/*адает позиционирование элементов относительно их обычного расположения*/
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -206,24 +206,20 @@ main {
   width: auto;
   height: 100%;
   padding: 50px 40px;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .card_type_film {
   background-image: url(../images/card-lot-01.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-} /*Классы .card_type_film, .card_type_book, .card_type_picture устанавливают фоновое изображение для карточек различных типов.*/
+}
 
 .card_type_book {
   background-image: url(../images/card-lot-02.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .card_type_picture {
   background-image: url(../images/card-lot-03.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .card__title {
@@ -235,14 +231,16 @@ main {
   line-height: 1.2;
   text-decoration-line: underline;
   text-transform: uppercase;
-}/*Стили .card__title и .card__text устанавливают отображение заголовка и текста для карточки, включая шрифт, размер, выделение, высоту строки и текстовое форматирование.*/
-
+}
 .card__text {
   position: relative;
   z-index: 1;
   color: #FFF;
   font-size: 20px;
   line-height: 1.2;
+  text-decoration: none;
+  text-align: left;
+  font-weight: 400;
 }
 
 .lots__look-more-link {
@@ -252,32 +250,32 @@ main {
   text-decoration-line: underline;
   text-underline-position: under;
   width: fit-content;
-} /*В классе .lots__look-more-link задаются стили для ссылки "Показать еще", включая положение, отступы, размер шрифта и подчеркивание текста.*/
+}
 
 .about {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 24px;
   padding: 0 50px;
-} /*В классе .about определяется отображение блока "О нас" с помощью сетки grid, устанавливаются колонки, промежутки и отступы.*/
+}
 
 .about__column {
-  justify-self: center;/*центрирует элемент по горизонтали в ячейке сетки*/
+  justify-self: center;
 }
 
 .about__column_text {
-  grid-column: 2/4;/*задает расположение элемента на сетке.*/
+  grid-column: 2/4;
 }
 
 .about__logo {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 240px;/*устанавливает ширину и высоту элемента, создающего форму круга.*/
-  height: 240px;/*устанавливает ширину и высоту элемента, создающего форму круга.*/
+  width: 240px;
+  height: 240px;
   border-radius: 50%;
   background-color: #000000;
-} /* .about__logo определяет стили для логотипа компании, включая размеры, форму, цвет фона и выравнивание. Создание круглого логотипа с черным фоном.*/
+}
 
 .about__logo-image {
   width: 148px;
@@ -304,25 +302,24 @@ main {
 
 .footer {
   display: flex;
-  justify-content: space-between;/*устанавливает выравнивание элементов по горизонтали с равным расстоянием между ними.*/
+  justify-content: space-between;
   padding: 180px 50px 80px;
-} /*Стили .footer определяют отображение нижнего блока (подвала), включая позиционирование, отступы и выравнивание. Это помогает в создании структуры и дизайна подвала на веб-странице.*/
+}
 
 .footer__social-icon {
   width: auto;
   height: 48px;
-} /*Стили .footer определяют отображение нижнего блока (подвала), включая позиционирование, отступы и выравнивание. Это помогает в создании структуры и дизайна подвала на веб-странице.*/
-
+}
 .footer__menu-list {
   text-align: center;
   list-style: none;
-}/*Класс .footer__menu-list задает стиль для списка меню в подвале, включая выравнивание элементов и отключение маркировки списка. */
+}
 
 .footer__menu-link {
   font-size: 18px;
   line-height: normal;
   text-underline-position: under;
-}/*Стили .footer__menu-link устанавливают вид ссылок в меню подвала, такие как размер шрифта, высота строки и подчеркивание текста*/
+}
 
 .footer__menu-link_active {
   text-decoration: none;
@@ -330,6 +327,6 @@ main {
 
 .footer__social-list {
   display: flex;
-  gap: 48px;/*задает промежуток между элементами списка*/
+  gap: 48px;
   list-style: none;
-} /*Класс .footer__social-list задает отображение списка иконок социальных сетей в подвале, включая расположение элементов внутри списка.*/
+}
