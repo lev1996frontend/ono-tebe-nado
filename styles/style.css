@@ -4,11 +4,6 @@
   gap: 180px;/*адает пространство между элементами flexbox. */
 }
 
-.content-section {
-  width: 100%;
-  margin: 0 auto;
-}
-
 .header {
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
