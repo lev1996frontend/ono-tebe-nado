@@ -5,15 +5,10 @@
   padding: 92px 50px 89px;
 }
 
-.content-section {
-  width: 100%;
-  margin: 0 auto;
-}
-
 .header__links-list {
   display: flex;
   gap: 32px;
-  padding-left: 4px;
+  padding-left: 1px;
 }
 
 .header__links-list-item {
@@ -26,7 +21,7 @@
 
 .header__link {
   font-size: 18px;
-  white-space: nowrap;/* запрещает перенос строки. */
+  white-space: nowrap; /* запрещает перенос строки. */
 }
 
 .text-link:hover {
@@ -39,11 +34,11 @@
 }
 
 .header__logo {
-    display: block;
-    justify-self: center;
-    align-self: center;
-    width: 140px;
-    position: relative;
+  display: block;
+  justify-self: center;
+  align-self: center;
+  width: 140px;
+  position: relative;
 }
 
 .header__logo-image {
@@ -51,7 +46,7 @@
 }
 
 .address {
-  font-style: inherit;/* наследует стиль шрифта родительского элемента*/
+  font-style: inherit; /* наследует стиль шрифта родительского элемента*/
 }
 
 .header__address {
@@ -76,11 +71,11 @@
 
 .main__container {
   display: flex; /*задает блочный элемент как контейнер flexbox */
-  flex-direction: column;/*задает направление элементов flexbox по вертикали. */
+  flex-direction: column; /*задает направление элементов flexbox по вертикали. */
 }
 
 .cover {
-  position: relative;/* задает позиционирование относительно родительского элемента. */
+  position: relative; /* задает позиционирование относительно родительского элемента. */
   padding: 165px 50px 50px 50px;
   background-image: url(../images/cover.jpg);
   background-repeat: no-repeat;
@@ -124,15 +119,14 @@
 .aligned-text_right {
   line-height: 1;
   text-align: right;
-
 }
 
 .letter-spacing-extended {
   letter-spacing: 60px;
-}/* Убирает бесполезный отступ в конце слова, создаваемый свойством letter-spacing всего элемента */
+} /* Убирает бесполезный отступ в конце слова, создаваемый свойством letter-spacing всего элемента */
 
 .remove-spacing {
-  letter-spacing: normal;/*сбрасывает межбуквенный интервал до значения по умолчанию.*/
+  letter-spacing: normal; /*сбрасывает межбуквенный интервал до значения по умолчанию.*/
 }
 
 .cover__description {
@@ -154,21 +148,21 @@
 }
 
 .button {
-  border: 1px #FFF solid;
+  border: 1px #fff solid;
   padding: 14px 32px;
-  color: #FFF;
-  font-family: 'Raleway', sans-serif;
+  color: #fff;
+  font-family: "Raleway", sans-serif;
   font-weight: normal;
   font-size: 22px;
   line-height: 1;
   text-transform: uppercase;
-  background-color: transparent;/*задает прозрачный фон.*/
+  background-color: transparent; /*задает прозрачный фон.*/
   cursor: none;
 }
 
 .button:hover {
   color: var(--black);
-  background-color: #FFF;
+  background-color: #fff;
 }
 
 .lots {
@@ -176,12 +170,12 @@
 }
 
 .lots__heading {
-	padding: 0 0 30px 40px;
-	font-weight: bold;
-	font-size: 40px;
-	line-height: 1;
-	text-transform: uppercase;
-	margin-top: 6px;
+  padding: 0 0 30px 40px;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 1;
+  text-transform: uppercase;
+  margin-top: 6px;
 }
 
 .lots__card-list {
@@ -259,19 +253,15 @@
 .about {
   display: flex;
   padding: 0 24px;
-  margin: 2px 0px 0px 8px
-}
-
-.about:first-of-type {
-  margin-bottom: 8px;
+  margin: 2px 0px 0px 8px;
 }
 
 .about__column {
-  margin-left: 38px;
+  margin-left: 39px;
 }
 
 .about__column_text {
-  margin: 0 0 0 0;
+  margin: 0 auto;
 }
 
 .about__logo {
@@ -299,7 +289,7 @@
 .about__text {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 22px;
   font-size: 20px;
   line-height: normal;
   margin: 1px 7px 10px 72px;
@@ -308,7 +298,7 @@
 .footer {
   display: flex;
   justify-content: space-between;
-  padding: 173px 50px 80px;
+  padding: 172px 50px 80px;
 }
 
 .footer__social-icon {
@@ -318,9 +308,9 @@
 .footer__menu-list {
   text-align: center;
   list-style: none;
-font-size: 18px;
-font-weight: normal;
-line-height: 21px;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 21px;
 }
 
 .footer__menu-link {
