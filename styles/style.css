@@ -166,11 +166,11 @@
 }
 
 .lots {
-  padding: 179px 24px;
+  padding: 175px 24px;
 }
 
 .lots__heading {
-  padding: 0 0 30px 40px;
+  padding: 3px 0 30px 40px;
   font-weight: bold;
   font-size: 40px;
   line-height: 1;
@@ -253,7 +253,7 @@
 .about {
   display: flex;
   padding: 0 24px;
-  margin: 2px 0px 0px 8px;
+  margin: 7px 0px 0px 8px;
 }
 
 .about__column {
